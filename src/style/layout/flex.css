@@ -1,0 +1,5 @@
+@layer components{
+ .FlexCenter{
+    @apply flex place-items-center
+ }
+}
