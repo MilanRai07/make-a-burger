@@ -1,14 +1,20 @@
 import Burger from "./components/Burger"
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useAddItem } from "./customHook/useAddItem"
 import { useRemoveItem } from "./customHook/useRemoveItem"
+import { useGetLocalStorage } from "./customHook/useGetLocalStorage"
+import { useSetLocalStorage } from "./customHook/useSetLocalStorage"
 
 const App: React.FC = () => {
-  const [spinach, setSpinach] = useState<number>(0)
-  const [onion, setOnion] = useState<number>(0)
-  const [steak, setSteak] = useState<number>(0)
+  const [spinach, setSpinach] = useState<number>(useGetLocalStorage('spinach'));
+  const [onion, setOnion] = useState<number>(useGetLocalStorage('onion'));
+  const [steak, setSteak] = useState<number>(useGetLocalStorage('steak'));
   const [message, setMessage] = useState<string>('Add the Recipes as you wish')
   console.log(message)
+
+  useEffect(() => {
+    useSetLocalStorage({ spinach, onion, steak })
+  }, [spinach, onion, steak])
 
   return (
     <>
