@@ -9,12 +9,12 @@ const App: React.FC = () => {
   const [spinach, setSpinach] = useState<number>(useGetLocalStorage('spinach'));
   const [onion, setOnion] = useState<number>(useGetLocalStorage('onion'));
   const [steak, setSteak] = useState<number>(useGetLocalStorage('steak'));
+  const [tomato, setTomato] = useState<number>(useGetLocalStorage('tomato'));
   const [message, setMessage] = useState<string>('Add the Recipes as you wish')
   console.log(message)
-
   useEffect(() => {
-    useSetLocalStorage({ spinach, onion, steak })
-  }, [spinach, onion, steak])
+    useSetLocalStorage({ spinach, onion, steak, tomato })
+  }, [spinach, onion, steak, tomato])
 
   return (
     <>
@@ -24,17 +24,21 @@ const App: React.FC = () => {
             spinach={spinach}
             onion={onion}
             steak={steak}
+            tomato={tomato}
           />
         </div>
         <div className="flex gap-4">
           <button onClick={() => useAddItem('Spinach', spinach, setSpinach, setMessage)}>Add Spinach</button>
           <button onClick={() => useAddItem('Onion', onion, setOnion, setMessage)}>Add Onion</button>
           <button onClick={() => useAddItem('Steak', steak, setSteak, setMessage)}>Add Steak</button>
+          <button onClick={() => useAddItem('Tomato', tomato, setTomato, setMessage)}>Add Tomato</button>
         </div><br></br>
         <div className="flex gap-4">
           <button onClick={() => useRemoveItem('Spinach', spinach, setSpinach, setMessage)}>Remove Spinach</button>
           <button onClick={() => useRemoveItem('Onion', onion, setOnion, setMessage)}>Remove Onion</button>
           <button onClick={() => useRemoveItem('Steak', steak, setSteak, setMessage)}>Remove Steak</button>
+          <button onClick={() => useRemoveItem('Tomato', tomato, setTomato, setMessage)}>Remove Tomato</button>
+
         </div>
       </main>
     </>

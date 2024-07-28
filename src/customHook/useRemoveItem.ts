@@ -1,6 +1,6 @@
 
 export const useRemoveItem = (
-    item: 'Spinach' | 'Onion' | 'Steak',
+    item: 'Spinach' | 'Onion' | 'Steak' | 'Tomato',
     itemValue: number,
     setItem: React.Dispatch<React.SetStateAction<number>>,
     setItemMessage: React.Dispatch<React.SetStateAction<string>>
