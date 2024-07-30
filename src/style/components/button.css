@@ -5,4 +5,8 @@
     .ItemButton{
         @apply text-white w-32 font-semibold rounded h-9 hover:scale-105 transition-all
     }
+    .PriceButton{
+        @apply text-white w-56 h-16 bg-orange-600 font-bold text-lg rounded animate-bounce
+         hover:animate-none
+    }
 }

@@ -1,6 +1,7 @@
 @import './layout/flex.css';
 @import './components/burger.css';
 @import './components/button.css';
+@import './components/bill.css';
 
 @tailwind base;
 @tailwind components;
@@ -18,3 +19,4 @@
   .ImageBackground{
     background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/restaurant.jpg')
   }
+  

@@ -1,0 +1,8 @@
+@layer components{
+    .BillItem{
+        @apply w-32 text-center
+    }
+    .BillDiv{
+        @apply flex gap-3 mb-5 p-2
+    }
+}
