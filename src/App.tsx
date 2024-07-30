@@ -4,6 +4,7 @@ import { useAddItem } from "./customHook/useAddItem"
 import { useRemoveItem } from "./customHook/useRemoveItem"
 import { useGetLocalStorage } from "./customHook/useGetLocalStorage"
 import { useSetLocalStorage } from "./customHook/useSetLocalStorage"
+import Chef from "./components/Chef"
 
 const App: React.FC = () => {
   const [spinach, setSpinach] = useState<number>(useGetLocalStorage('spinach'));
@@ -19,7 +20,7 @@ const App: React.FC = () => {
   return (
     <>
       <main className="h-screen w-full ImageBackground bg-center relative ">
-        <div className="absolute bottom-[36%] left-1/2 -translate-x-1/2">
+        <div className="absolute bottom-[20%] left-1/2 -translate-x-1/2">
           <Burger
             spinach={spinach}
             onion={onion}
@@ -27,18 +28,20 @@ const App: React.FC = () => {
             tomato={tomato}
           />
         </div>
-        <div className="flex gap-4">
-          <button onClick={() => useAddItem('Spinach', spinach, setSpinach, setMessage)}>Add Spinach</button>
-          <button onClick={() => useAddItem('Onion', onion, setOnion, setMessage)}>Add Onion</button>
-          <button onClick={() => useAddItem('Steak', steak, setSteak, setMessage)}>Add Steak</button>
-          <button onClick={() => useAddItem('Tomato', tomato, setTomato, setMessage)}>Add Tomato</button>
+        <div className="ButtonDiv pt-2">
+          <button className="bg-green-700 ItemButton" onClick={() => useAddItem('Spinach', spinach, setSpinach, setMessage)}>Add Spinach</button>
+          <button className="bg-purple-700 ItemButton" onClick={() => useAddItem('Onion', onion, setOnion, setMessage)}>Add Onion</button>
+          <button className="bg-pink-700 ItemButton" onClick={() => useAddItem('Steak', steak, setSteak, setMessage)}>Add Steak</button>
+          <button className="bg-red-700 ItemButton" onClick={() => useAddItem('Tomato', tomato, setTomato, setMessage)}>Add Tomato</button>
         </div><br></br>
-        <div className="flex gap-4">
-          <button onClick={() => useRemoveItem('Spinach', spinach, setSpinach, setMessage)}>Remove Spinach</button>
-          <button onClick={() => useRemoveItem('Onion', onion, setOnion, setMessage)}>Remove Onion</button>
-          <button onClick={() => useRemoveItem('Steak', steak, setSteak, setMessage)}>Remove Steak</button>
-          <button onClick={() => useRemoveItem('Tomato', tomato, setTomato, setMessage)}>Remove Tomato</button>
-
+        <div className="ButtonDiv">
+          <button className="bg-green-900 ItemButton" onClick={() => useRemoveItem('Spinach', spinach, setSpinach, setMessage)}>Remove Spinach</button>
+          <button className="bg-purple-900 ItemButton" onClick={() => useRemoveItem('Onion', onion, setOnion, setMessage)}>Remove Onion</button>
+          <button className="bg-pink-900 ItemButton" onClick={() => useRemoveItem('Steak', steak, setSteak, setMessage)}>Remove Steak</button>
+          <button className="bg-red-900 ItemButton" onClick={() => useRemoveItem('Tomato', tomato, setTomato, setMessage)}>Remove Tomato</button>
+        </div>
+        <div className="absolute right-5 bottom-[30%]">
+          <Chef message={message} />
         </div>
       </main>
     </>

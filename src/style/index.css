@@ -1,5 +1,6 @@
 @import './layout/flex.css';
 @import './components/burger.css';
+@import './components/button.css';
 
 @tailwind base;
 @tailwind components;
@@ -15,8 +16,5 @@
     -moz-osx-font-smoothing: grayscale;
   }
   .ImageBackground{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/restaurant.webp')
-  }
-  button{
-    @apply bg-yellow-800 text-white hover:bg-yellow-900
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/restaurant.jpg')
   }

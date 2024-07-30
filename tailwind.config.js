@@ -20,12 +20,6 @@ export default {
         '1xs': { 'max': '426px' }
       }
     },
-    backgroundImage:{
-      'bg-spinach':'url(./images/spinach.jpg)',
-      'bg-steak':'url(./images/steak.jpg)',
-      'bg-onion':'url(./images/onion.jpg)',
-      'bg-cheese':'url(./images/cheese.webp)',
-    }
   },
   plugins: [],
 }

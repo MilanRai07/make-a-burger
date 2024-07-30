@@ -1,0 +1,8 @@
+@layer components{
+    .ButtonDiv{
+        @apply flex gap-4 justify-center
+    }
+    .ItemButton{
+        @apply text-white w-32 font-semibold rounded h-9 hover:scale-105 transition-all
+    }
+}
