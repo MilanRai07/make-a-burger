@@ -21,7 +21,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <main className="h-screen w-full ImageBackground bg-center md:bg-contain xs:bg-cover relative ">
+      <main className="h-screen w-full bg-background-image bg-center md:bg-contain xs:bg-cover relative ">
         {showPricing ?
           <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" >
             <Bill

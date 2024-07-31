@@ -18,9 +18,6 @@
     -moz-osx-font-smoothing: grayscale;
     --item-height: 22px;
   }
-  .ImageBackground{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/restaurant.jpg');
-  }
   @media only screen and (max-width:1182px){
     :root{
       --item-height:18px;
