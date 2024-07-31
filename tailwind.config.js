@@ -34,7 +34,7 @@ export default {
         'showSlow': 'showSlow 1s',
       },
       backgroundImage: {
-        'background-image': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/restaurant.jpg')"
+        'background-image': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('/images/restaurant.jpg')"
       }
     },
   },
