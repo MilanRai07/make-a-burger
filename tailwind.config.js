@@ -4,7 +4,6 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-
     extend: {
       screens: {
         '2xl': { 'max': '1535px' },
