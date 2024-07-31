@@ -1,15 +1,18 @@
 @layer components{
   .Head{
-   @apply  h-24 FlexCenter mb-1
+   @apply  h-24 FlexCenter mb-1 mlg:mb-0 md:!-mb-2 xs:justify-center xs:!-mb-5
   }
   .Tail{
-    @apply h-16 FlexCenter justify-center mt-1
+    @apply h-16 FlexCenter justify-center mt-1 mlg:mt-3 xl:mt-4 md:!-mt-2 xs:!mt-3
   }
     .BurgerItemDiv{
         @apply flex items-center flex-col gap-1
       }
       .BurgerItem{
-        @apply w-44 h-5 flex place-items-center gap-2
+        @apply w-44 h-5 flex place-items-center gap-2 mlg:w-36 md:h-3 xs:w-28
+      }
+      .BurgerIcon{
+        @apply md:h-6 md:w-44 xs:h-5
       }
 
 }

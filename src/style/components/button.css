@@ -1,12 +1,13 @@
 @layer components{
     .ButtonDiv{
-        @apply flex gap-4 justify-center
+        @apply flex gap-4 justify-center sm:gap-2
     }
     .ItemButton{
-        @apply text-white w-32 font-semibold rounded h-9 hover:scale-105 transition-all
+        @apply text-white w-32 font-semibold rounded h-9 hover:scale-105 transition-all sm:w-[90px] sm:text-xs xs:text-2xs
+        xs:w-16
     }
     .PriceButton{
-        @apply text-white w-56 h-16 bg-orange-600 font-bold text-lg rounded animate-bounce
-         hover:animate-none
+        @apply text-white w-56 h-16 bg-orange-600 font-bold text-lg rounded hover:animate-pulse mlg:w-48 mlg:h-14
+        sm:!w-40 sm:!h-11 sm:text-base xs:!w-32 xs:!h-9 xs:text-sm
     }
 }

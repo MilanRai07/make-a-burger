@@ -41,9 +41,9 @@ const Bill: React.FC<propType> = ({ spinach, steak, onion, tomato, setState }) =
     return (
         <>
             <section>
-                <h1 className="mb-6 text-center text-xl text-white font-bold">Your Burger Price</h1>
+                <h1 className="mb-6 text-center text-xl text-white font-bold sm-d:text-lg">Your Burger Price</h1>
                 <div className="text-white   bg-[rgba(0,0,0,0.7)] rounded">
-                    <div className="BillDiv mb-7 border-b-2 border-white font-semibold">
+                    <div className="BillDiv mb-7 border-b-2 border-white font-semibold sm-d:text-sm">
                         <div className="BillItem">Items</div>
                         <div className="BillItem">No. of item</div>
                         <div className="BillItem">Price</div>

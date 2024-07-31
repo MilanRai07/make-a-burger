@@ -21,7 +21,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <main className="h-screen w-full ImageBackground bg-center relative ">
+      <main className="h-screen w-full ImageBackground bg-center md:bg-contain xs:bg-cover relative ">
         {showPricing ?
           <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" >
             <Bill
@@ -34,7 +34,8 @@ const App: React.FC = () => {
           </div>
           :
           <div>
-            <div className="absolute bottom-[20%] left-1/2 -translate-x-1/2">
+            <div className="absolute bottom-[20%] left-1/2 -translate-x-1/2 xl:bottom-16 mlg:bottom-[11%] 
+            md:left-[20%] md:!bottom-1/4 sm-d:left-[30%] xs:left-1/2 ">
               <Burger
                 spinach={spinach}
                 onion={onion}
@@ -54,10 +55,10 @@ const App: React.FC = () => {
               <button className="bg-purple-900 ItemButton" onClick={() => useRemoveItem('Onion', onion, setOnion, setMessage)}>Remove Onion</button>
               <button className="bg-pink-900 ItemButton" onClick={() => useRemoveItem('Steak', steak, setSteak, setMessage)}>Remove Steak</button>
             </div>
-            <div className="absolute right-5 bottom-[30%]">
+            <div className="absolute right-5 bottom-[30%] sm-d:bottom-[50%] xs:bottom-[65%]">
               <Chef message={message} />
             </div>
-            <div className="absolute left-5 bottom-[30%]">
+            <div className="absolute left-5 bottom-[30%] md:left-1/2 md:-translate-x-1/2 md:bottom-10 ">
               <button className="PriceButton" onClick={() => setShowPricing(true)}>Burger Pricing</button>
             </div>
           </div>

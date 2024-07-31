@@ -1,0 +1,6 @@
+@layer components{
+    .ChefMessage{
+        @apply absolute left-1/2 -translate-x-1/2 top-[22%] text-center font-bold text-sm
+        xl:top-[13%] lg:text-xs 1xs:text-2xs
+    }
+}
