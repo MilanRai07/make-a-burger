@@ -19,7 +19,7 @@
     --item-height: 22px;
   }
   .ImageBackground{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/restaurant.jpg')
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('./images/restaurant.jpg');
   }
   @media only screen and (max-width:1182px){
     :root{
@@ -35,17 +35,5 @@
     :root{
       --item-height:9px;
     }
-  }
-  
-  @keyframes showSlow{
-    0%{
-      opacity:0%
-    },
-    100%{
-      opacity:100%
-    }
-  }
-  .itemAnimate{
-    animate:showSlow 3s 
   }
   
