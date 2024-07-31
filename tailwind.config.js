@@ -21,6 +21,19 @@ export default {
       fontSize: {
         '2xs': '8px',
       },
+      keyframes: {
+        showSlow: {
+          '0%': {
+            opacity: '0'
+          },
+          '100%': {
+            opacity: '1'
+          }
+        },
+      },
+      animation: {
+        'showSlow': 'showSlow 1s',
+      },
     },
   },
   plugins: [],
